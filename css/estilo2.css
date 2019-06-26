@@ -1,0 +1,43 @@
+body {    
+    margin: 0;  /*retira todas margens*/
+    padding: 0; /*retira todas margens*/
+}
+
+.conteudo{
+    background-image: url('../images/fundo-cidade.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; /*tamanho bom para todos dispositivos 100vw - altura total*/
+    overflow: hidden; /*retira completamente scroll da página*/
+    display: flex;
+    justify-content: space-around; /*separa as divs em colunas*/
+    align-items: center;
+}
+.conteudo div{
+    background-color:#6c9eca40; /* pegar a transparencia pelo quadradinho do inspecionar elemento */
+    padding: 50px;
+}
+h3 {
+    color: white;
+    font-size: 2em;
+}
+p {
+    color: white;
+    font-size: 2em;
+}
+input[type=email]{
+    width: 25vw; /*aumenta a caixa de digitação do email */
+    height: 40px;    
+}
+form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* aumenta o tamanho do botão igual ao input */
+    align-items: center; /* inverte o eixo e traz o botão para o tamanho normal*/
+}
+button {
+    padding: 10px 40px 10px 40px; /* use sempre o padding ao inves de widht e height */
+    border-radius: 10px;
+    border-color: white;
+}

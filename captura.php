@@ -5,7 +5,8 @@
     $resultado = $query->fetchAll(PDO::FETCH_ASSOC);
     foreach ($resultado as $total) {
         $total['vcont'];
-    }
+    }    
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -52,7 +53,17 @@
                     Propostas enviadas hoje! <span class="badge badge-light"><?= $total['vcont']; ?></span>
                     <span class="sr-only">unread messages</span>
                     </button>
+                    <?php
+                    if (isset($_GET['msg'])){                    
+                    ?>
+                        <div>
+                            <h3>Obrigado! - Aguarde nosso contato!</h3>
+                        </div>
+                    <?php
+                    }
+                    ?>
                 </div>
+                
             </div>
 
             <div class="col_lg-1">
